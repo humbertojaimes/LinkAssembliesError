@@ -47,6 +47,7 @@
     <WarningLevel>4</WarningLevel>
     <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
     <AndroidLinkMode>SdkOnly</AndroidLinkMode>
+    <AndroidSupportedAbis>armeabi-v7a;x86;x86_64</AndroidSupportedAbis>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="FormsViewGroup, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -59,12 +60,6 @@
     <Reference Include="System.ObjectModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Xml" />
-    <Reference Include="TK.CustomMap, Version=1.5.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\TK.CustomMap.1.5.1\lib\MonoAndroid10\TK.CustomMap.dll</HintPath>
-    </Reference>
-    <Reference Include="TK.CustomMap.Android, Version=1.5.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\TK.CustomMap.1.5.1\lib\MonoAndroid10\TK.CustomMap.Android.dll</HintPath>
-    </Reference>
     <Reference Include="Xamarin.Android.Support.Animated.Vector.Drawable, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Xamarin.Android.Support.Animated.Vector.Drawable.25.3.1\lib\MonoAndroid70\Xamarin.Android.Support.Animated.Vector.Drawable.dll</HintPath>
     </Reference>
@@ -178,8 +173,16 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\App7\App7.csproj">
-      <Project>{3fb1aeb8-135e-4fbc-ab8c-b0a099a35dee}</Project>
+      <Project>{84E47871-54B2-4133-9DB9-F1E757656DAF}</Project>
       <Name>App7</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TK.CustomMap\TK.CustomMap.csproj">
+      <Project>{14C534B6-1984-41A9-A384-D3A5508588E3}</Project>
+      <Name>TK.CustomMap</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TK.CustomMap.Android\TK.CustomMap.Android.csproj">
+      <Project>{AD2D2DB4-E781-4CF1-9B62-3AAD264F196D}</Project>
+      <Name>TK.CustomMap.Android</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

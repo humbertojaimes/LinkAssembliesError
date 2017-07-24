@@ -150,7 +150,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\App7\App7.csproj">
-      <Project>{3fb1aeb8-135e-4fbc-ab8c-b0a099a35dee}</Project>
+      <Project>{84E47871-54B2-4133-9DB9-F1E757656DAF}</Project>
       <Name>App7</Name>
     </ProjectReference>
   </ItemGroup>
